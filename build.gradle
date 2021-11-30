@@ -58,9 +58,9 @@ checkstyle {
 }
 sonarqube {
     properties {
-        property "sonar.projectKey", "SizeAdjustingTextView"
+        property "sonar.projectKey", "applibgroup_SizeAdjustingTextView"
         property "sonar.organization", "applibgroup"
-        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.host.url", "https://sonarcloud.io/"
         property "sonar.sources", "entry,sizeadjustingtextview"
         property "sonar.java.binaries", "entry/build,sizeadjustingtextview/build"
         property "sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/checkstyle.xml"
