@@ -1,0 +1,27 @@
+{
+  "app": {
+    "bundleName": "com.elliott.chenger.autosizingtextexampleproject",
+    "vendor": "omitneedlesscode",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.omitneedlesscode.sizeadjustingtextview",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable",
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "sizeadjustingtextview",
+      "moduleType": "har"
+    }
+  }
+}
