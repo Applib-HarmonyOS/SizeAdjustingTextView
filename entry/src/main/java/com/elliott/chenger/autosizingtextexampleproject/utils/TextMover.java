@@ -6,6 +6,11 @@ import com.omitneedlesscode.sizeadjustingtextview.SizeAdjustingTextView;
  * Created by chenger on 5/26/14.
  */
 public class TextMover {
+
+    private TextMover() {
+        throw new IllegalStateException("TextMover class");
+    }
+
     public static void moveTextFromCellToCell(SizeAdjustingTextView startingCell,
         SizeAdjustingTextView endCell) {
         if (!startingCell.getText().toString().isEmpty()) {

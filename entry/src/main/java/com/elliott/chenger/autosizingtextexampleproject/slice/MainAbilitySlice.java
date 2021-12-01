@@ -27,9 +27,12 @@ import ohos.miscservices.inputmethod.EditorAttribute;
 
 public class MainAbilitySlice extends AbilitySlice {
     private TextField mMessageEditText;
-    private SizeAdjustingTextView mTopMessageBox,
-            mMiddleLeftBox, mMiddleRightBox, mBottomLeftBox,
-            mBottomMiddleBox, mBottomRightBox;
+    private SizeAdjustingTextView mTopMessageBox;
+    private SizeAdjustingTextView mMiddleLeftBox;
+    private SizeAdjustingTextView mMiddleRightBox;
+    private SizeAdjustingTextView mBottomLeftBox;
+    private SizeAdjustingTextView mBottomMiddleBox;
+    private SizeAdjustingTextView mBottomRightBox;
 
     Text.EditorActionListener actionListener = new Text.EditorActionListener() {
         @Override
@@ -43,21 +46,22 @@ public class MainAbilitySlice extends AbilitySlice {
             }
             return handled;
         }
+        private void moveText() {
+            TextMover.moveTextFromCellToCell(mBottomMiddleBox, mBottomRightBox);
+            TextMover.moveTextFromCellToCell(mBottomLeftBox, mBottomMiddleBox);
+            TextMover.moveTextFromCellToCell(mMiddleRightBox, mBottomLeftBox);
+            TextMover.moveTextFromCellToCell(mMiddleLeftBox, mMiddleRightBox);
+            TextMover.moveTextFromCellToCell(mTopMessageBox, mMiddleLeftBox);
+            String incomingText = mMessageEditText.getText().toString();
+            TextMover.moveNewTextIntoCell(mTopMessageBox, incomingText);
+        }
+
+        private void clearEditText(){
+            mMessageEditText.setText("");
+        }
     };
 
-    private void moveText() {
-        TextMover.moveTextFromCellToCell(mBottomMiddleBox, mBottomRightBox);
-        TextMover.moveTextFromCellToCell(mBottomLeftBox, mBottomMiddleBox);
-        TextMover.moveTextFromCellToCell(mMiddleRightBox, mBottomLeftBox);
-        TextMover.moveTextFromCellToCell(mMiddleLeftBox, mMiddleRightBox);
-        TextMover.moveTextFromCellToCell(mTopMessageBox, mMiddleLeftBox);
-        String incomingText = mMessageEditText.getText().toString();
-        TextMover.moveNewTextIntoCell(mTopMessageBox, incomingText);
-    }
 
-    private void clearEditText(){
-        mMessageEditText.setText("");
-    }
 
     @Override
     public void onStart(Intent intent) {

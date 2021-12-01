@@ -13,14 +13,6 @@ public class SizeAdjustingTextViewTest {
 
     Context context;
 
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
-
     @Test
     public void maxTextSizeTest() {
         context= AbilityDelegatorRegistry.getAbilityDelegator().getAppContext();
