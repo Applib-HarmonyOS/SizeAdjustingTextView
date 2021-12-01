@@ -1,5 +1,5 @@
 
-# AppRate
+# SizeAdjustingTextView
 
 This is based on an open source autosizing text component for Hmos.
 
