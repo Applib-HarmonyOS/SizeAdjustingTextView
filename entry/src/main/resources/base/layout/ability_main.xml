@@ -26,11 +26,12 @@
     <com.omitneedlesscode.sizeadjustingtextview.SizeAdjustingTextView
         ohos:id="$+id:topBox"
         ohos:height="75vp"
+        ohos:background_element="$graphic:sizeadjustingtextview_background"
         ohos:width="match_parent"
-        ohos:background_element="#EE00FF"
         ohos:below="$id:text_input"
         ohos:multiple_lines="true"
         ohos:padding="0vp"
+        ohos:margin="5vp"
         ohos:text_alignment="center"
         ohos:text_color="#000000"
         ohos:text_size="32fp"/>
@@ -40,15 +41,16 @@
         ohos:id="$+id:middleRow"
         ohos:height="75vp"
         ohos:width="match_parent"
-        ohos:background_element="#00FFDD"
         ohos:below="$id:topBox">
 
         <com.omitneedlesscode.sizeadjustingtextview.SizeAdjustingTextView
             ohos:id="$+id:middleLeftBox"
             ohos:height="match_parent"
             ohos:width="300vp"
-            ohos:background_element="#EE0000"
+            ohos:margin="5vp"
+
             ohos:layout_alignment="top"
+            ohos:background_element="$graphic:sizeadjustingtextview_background"
             ohos:multiple_lines="true"
             ohos:text_alignment="center"
             ohos:text_color="#000000"
@@ -58,10 +60,11 @@
             ohos:id="$+id:middleRightBox"
             ohos:height="match_parent"
             ohos:width="300vp"
+            ohos:background_element="$graphic:sizeadjustingtextview_background"
             ohos:align_parent_end="true"
-            ohos:background_element="#0000FF"
             ohos:multiple_lines="true"
             ohos:right_of="$id:middleLeftBox"
+            ohos:margin="5vp"
             ohos:text_alignment="center"
             ohos:text_color="#000000"
             ohos:text_size="32fp"/>
@@ -72,16 +75,16 @@
         ohos:id="$+id:bottomRow"
         ohos:height="75vp"
         ohos:width="match_parent"
-        ohos:background_element="#00FFDD"
         ohos:below="$id:middleRow">
 
         <com.omitneedlesscode.sizeadjustingtextview.SizeAdjustingTextView
             ohos:id="$+id:bottomLeftBox"
             ohos:height="match_parent"
             ohos:width="200vp"
-            ohos:background_element="#EEFFFF"
+            ohos:margin="5vp"
             ohos:multiple_lines="true"
             ohos:padding="0vp"
+            ohos:background_element="$graphic:sizeadjustingtextview_background"
             ohos:text_alignment="center"
             ohos:text_color="#000000"
             ohos:text_size="32fp"/>
@@ -90,7 +93,8 @@
             ohos:id="$+id:bottomMiddleBox"
             ohos:height="match_parent"
             ohos:width="250vp"
-            ohos:background_element="#EEDAFF"
+            ohos:margin="5vp"
+            ohos:background_element="$graphic:sizeadjustingtextview_background"
             ohos:multiple_lines="true"
             ohos:padding="0vp"
             ohos:right_of="$id:bottomLeftBox"
@@ -102,8 +106,9 @@
             ohos:id="$+id:bottomRightBox"
             ohos:height="match_parent"
             ohos:width="200vp"
+            ohos:margin="5vp"
             ohos:align_parent_end="true"
-            ohos:background_element="#EEADFF"
+            ohos:background_element="$graphic:sizeadjustingtextview_background"
             ohos:multiple_lines="true"
             ohos:padding="0vp"
             ohos:right_of="$id:bottomMiddleBox"

@@ -37,9 +37,7 @@ import ohos.hiviewdfx.HiLogLabel;
 public class SizeAdjustingTextView extends Text implements Text.TextObserver {
     public static final HiLogLabel HI_LOG_LABEL = new HiLogLabel(0, 0, "SizeAdjustingTextView");
 
-    Paint mTextPaint;
-
-    SimpleTextLayout mTextLayout;
+    private Paint mTextPaint;
 
     // Minimum text size for this text view
     public static final float MIN_TEXT_SIZE = 20;
@@ -52,6 +50,17 @@ public class SizeAdjustingTextView extends Text implements Text.TextObserver {
 
     // Lower bounds for text size
     private float mMinTextSize = MIN_TEXT_SIZE;
+
+
+    // Text view line spacing multiplier
+    private float mSpacingMult = 1.0f;
+
+
+    // Add ellipsis to text that overflows at the smallest text size
+    private boolean mAddEllipsis = true;
+
+    // Text view additional line spacing
+    private float mSpacingAdd = 0.0f;
 
     // Default constructor override
     public SizeAdjustingTextView(Context context) {
@@ -165,8 +174,17 @@ public class SizeAdjustingTextView extends Text implements Text.TextObserver {
 
     private int getTextHeight(CharSequence source, int width, int height, float textSize) {
         mTextPaint.setTextSize((int) textSize);
-        mTextLayout = new SimpleTextLayout(source.toString(), mTextPaint,
+        SimpleTextLayout mTextLayout = new SimpleTextLayout(source.toString(), mTextPaint,
                 new Rect(0, 0, width, height), width);
         return mTextLayout.getHeight();
     }
+
+    public boolean getAddEllipsis() {
+        return mAddEllipsis;
+    }
+
+    public void setAddEllipsis(boolean addEllipsis) {
+        mAddEllipsis = addEllipsis;
+    }
+
 }

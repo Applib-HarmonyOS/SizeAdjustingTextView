@@ -8,10 +8,13 @@ This is based on an open source autosizing text component for Hmos.
 Inspired by [erchenger/SizeAdjustingTextView](https://github.com/erchenger/SizeAdjustingTextView)
 
 ## Feature
-This is based on autosizing text component for Hmos.
+SizeAdjustingTextView is a library that allows user to input text of any length of characters which will auto resize the text within the custom component.
+Resizing multiple lines in the text component to keep up the changes.
+
+<img src="screenshots/gif.gif" width="500">
 
 ## Dependency
-1. For using apprate module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/support.har.
+1. For using sizeadjustingtextview module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/support.har.
 ```groovy
     dependencies {
        implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
@@ -20,14 +23,14 @@ This is based on autosizing text component for Hmos.
        ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
 }
 ```
-2. For using apprate in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
+2. For using sizeadjustingtextview in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
 ```groovy
         dependencies {
              implementation fileTree(dir: 'libs', include: ['*.har'])
              testImplementation 'junit:junit:4.13'
         }
 ```
-3. For using apprate from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
+3. For using sizeadjustingtextview from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
 ``` groovy
          dependencies {
              implementation 'dev.applibgroup:SizeAdjustingTextView'

@@ -70,6 +70,7 @@ public class MainAbilitySlice extends AbilitySlice {
         mMessageEditText= (TextField) findComponentById(ResourceTable.Id_text_input);
         mMessageEditText.setEditorActionListener(actionListener);
         mTopMessageBox = (SizeAdjustingTextView) findComponentById(ResourceTable.Id_topBox);
+        mTopMessageBox.setAddEllipsis(true);
         mMiddleLeftBox = (SizeAdjustingTextView) findComponentById(ResourceTable.Id_middleLeftBox);
         mMiddleRightBox = (SizeAdjustingTextView) findComponentById(ResourceTable.Id_middleRightBox);
         mBottomLeftBox = (SizeAdjustingTextView) findComponentById(ResourceTable.Id_bottomLeftBox);

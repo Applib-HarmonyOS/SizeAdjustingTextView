@@ -66,3 +66,4 @@ sonarqube {
         property "sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/checkstyle.xml"
     }
 }
+
