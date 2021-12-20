@@ -15,7 +15,7 @@
         ohos:width="match_parent"
         ohos:background_element="#000000"
         ohos:bottom_margin="50vp"
-        ohos:hint="Enter text here"
+        ohos:hint="$string:input_hint"
         ohos:hint_color="#FFFFFF"
         ohos:input_enter_key_type="enter_key_type_send"
         ohos:text_alignment="center"
@@ -48,7 +48,6 @@
             ohos:height="match_parent"
             ohos:width="300vp"
             ohos:margin="5vp"
-
             ohos:layout_alignment="top"
             ohos:background_element="$graphic:sizeadjustingtextview_background"
             ohos:multiple_lines="true"

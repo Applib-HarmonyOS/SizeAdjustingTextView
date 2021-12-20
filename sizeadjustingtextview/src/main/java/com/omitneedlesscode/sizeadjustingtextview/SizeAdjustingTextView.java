@@ -1,15 +1,3 @@
-package com.omitneedlesscode.sizeadjustingtextview;
-
-import ohos.agp.components.AttrSet;
-import ohos.agp.components.Text;
-import ohos.agp.render.Paint;
-import ohos.agp.text.SimpleTextLayout;
-import ohos.agp.utils.Rect;
-import ohos.agp.utils.TextAlignment;
-import ohos.app.Context;
-import ohos.hiviewdfx.HiLog;
-import ohos.hiviewdfx.HiLogLabel;
-
 /**
  * SizeAdjustingTextView is a TextView that adjusts text size
  * depending if or if not it will fit in the view bounds.
@@ -34,6 +22,19 @@ import ohos.hiviewdfx.HiLogLabel;
  * @since Jan 18, 2014
  * @since Apr 4, 2011
  */
+
+package com.omitneedlesscode.sizeadjustingtextview;
+
+import ohos.agp.components.AttrSet;
+import ohos.agp.components.Text;
+import ohos.agp.render.Paint;
+import ohos.agp.text.SimpleTextLayout;
+import ohos.agp.utils.Rect;
+import ohos.agp.utils.TextAlignment;
+import ohos.app.Context;
+import ohos.hiviewdfx.HiLog;
+import ohos.hiviewdfx.HiLogLabel;
+
 public class SizeAdjustingTextView extends Text implements Text.TextObserver {
     public static final HiLogLabel HI_LOG_LABEL = new HiLogLabel(0, 0, "SizeAdjustingTextView");
 

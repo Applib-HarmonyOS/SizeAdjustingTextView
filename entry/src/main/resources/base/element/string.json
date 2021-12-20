@@ -2,15 +2,15 @@
   "string": [
     {
       "name": "entry_MainAbility",
-      "value": "entry_MainAbility"
+      "value": "SizeAdjustingTextView"
     },
     {
       "name": "mainability_description",
       "value": "Java_Empty Ability"
     },
     {
-      "name": "mainability_HelloWorld",
-      "value": "Hello World"
+      "name": "input_hint",
+      "value": "Enter text here"
     }
   ]
 }
