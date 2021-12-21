@@ -1,12 +1,12 @@
 {
   "string": [
     {
-      "name": "entry_MainAbility",
+      "name": "app_name",
       "value": "SizeAdjustingTextView"
     },
     {
       "name": "mainability_description",
-      "value": "Java_Empty Ability"
+      "value": "This is based on an open source autosizing textview for HMOS."
     },
     {
       "name": "input_hint",
