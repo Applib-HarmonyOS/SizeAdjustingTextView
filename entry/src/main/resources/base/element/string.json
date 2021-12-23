@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "SizeAdjustingTextView"
+    },
+    {
+      "name": "mainability_description",
+      "value": "This is based on an open source autosizing textview for HMOS."
+    },
+    {
+      "name": "input_hint",
+      "value": "Enter text here"
+    }
+  ]
+}

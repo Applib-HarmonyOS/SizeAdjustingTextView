@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:bottom_padding="$float:vertical_margin"
+    ohos:end_padding="$float:horizontal_margin"
+    ohos:start_padding="$float:horizontal_margin"
+    ohos:top_padding="$float:vertical_margin">
+
+    <!-- Input -->
+    <TextField
+        ohos:id="$+id:text_input"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:background_element="#000000"
+        ohos:bottom_margin="50vp"
+        ohos:hint="$string:input_hint"
+        ohos:hint_color="#FFFFFF"
+        ohos:input_enter_key_type="enter_key_type_send"
+        ohos:text_alignment="center"
+        ohos:text_color="#FFFFFF"
+        ohos:text_size="20fp"/>
+
+    <!-- Top Row -->
+    <com.omitneedlesscode.sizeadjustingtextview.SizeAdjustingTextView
+        ohos:id="$+id:topBox"
+        ohos:height="75vp"
+        ohos:background_element="$graphic:sizeadjustingtextview_background"
+        ohos:width="match_parent"
+        ohos:below="$id:text_input"
+        ohos:multiple_lines="true"
+        ohos:padding="0vp"
+        ohos:margin="5vp"
+        ohos:text_alignment="center"
+        ohos:text_color="#000000"
+        ohos:text_size="32fp"/>
+
+    <!-- Second Row -->
+    <DependentLayout
+        ohos:id="$+id:middleRow"
+        ohos:height="75vp"
+        ohos:width="match_parent"
+        ohos:below="$id:topBox">
+
+        <com.omitneedlesscode.sizeadjustingtextview.SizeAdjustingTextView
+            ohos:id="$+id:middleLeftBox"
+            ohos:height="match_parent"
+            ohos:width="300vp"
+            ohos:margin="5vp"
+            ohos:layout_alignment="top"
+            ohos:background_element="$graphic:sizeadjustingtextview_background"
+            ohos:multiple_lines="true"
+            ohos:text_alignment="center"
+            ohos:text_color="#000000"
+            ohos:text_size="32fp"/>
+
+        <com.omitneedlesscode.sizeadjustingtextview.SizeAdjustingTextView
+            ohos:id="$+id:middleRightBox"
+            ohos:height="match_parent"
+            ohos:width="300vp"
+            ohos:background_element="$graphic:sizeadjustingtextview_background"
+            ohos:align_parent_end="true"
+            ohos:multiple_lines="true"
+            ohos:right_of="$id:middleLeftBox"
+            ohos:margin="5vp"
+            ohos:text_alignment="center"
+            ohos:text_color="#000000"
+            ohos:text_size="32fp"/>
+    </DependentLayout>
+
+    <!-- Third Row -->
+    <DependentLayout
+        ohos:id="$+id:bottomRow"
+        ohos:height="75vp"
+        ohos:width="match_parent"
+        ohos:below="$id:middleRow">
+
+        <com.omitneedlesscode.sizeadjustingtextview.SizeAdjustingTextView
+            ohos:id="$+id:bottomLeftBox"
+            ohos:height="match_parent"
+            ohos:width="200vp"
+            ohos:margin="5vp"
+            ohos:multiple_lines="true"
+            ohos:padding="0vp"
+            ohos:background_element="$graphic:sizeadjustingtextview_background"
+            ohos:text_alignment="center"
+            ohos:text_color="#000000"
+            ohos:text_size="32fp"/>
+
+        <com.omitneedlesscode.sizeadjustingtextview.SizeAdjustingTextView
+            ohos:id="$+id:bottomMiddleBox"
+            ohos:height="match_parent"
+            ohos:width="250vp"
+            ohos:margin="5vp"
+            ohos:background_element="$graphic:sizeadjustingtextview_background"
+            ohos:multiple_lines="true"
+            ohos:padding="0vp"
+            ohos:right_of="$id:bottomLeftBox"
+            ohos:text_alignment="center"
+            ohos:text_color="#000000"
+            ohos:text_size="32fp"/>
+
+        <com.omitneedlesscode.sizeadjustingtextview.SizeAdjustingTextView
+            ohos:id="$+id:bottomRightBox"
+            ohos:height="match_parent"
+            ohos:width="200vp"
+            ohos:margin="5vp"
+            ohos:align_parent_end="true"
+            ohos:background_element="$graphic:sizeadjustingtextview_background"
+            ohos:multiple_lines="true"
+            ohos:padding="0vp"
+            ohos:right_of="$id:bottomMiddleBox"
+            ohos:text_alignment="center"
+            ohos:text_color="#000000"
+            ohos:text_size="32fp"/>
+
+    </DependentLayout>
+
+</DependentLayout>
