@@ -1,6 +1,4 @@
-[![.github/workflows/main.yml](https://github.com/applibgroup/SizeAdjustingTextView/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/SizeAdjustingTextView/actions/workflows/main.yml)
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_SizeAdjustingTextView&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=applibgroup_SizeAdjustingTextView)
+[![.github/workflows/main.yml](https://github.com/applibgroup/SizeAdjustingTextView/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/SizeAdjustingTextView/actions/workflows/main.yml)  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_SizeAdjustingTextView&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=applibgroup_SizeAdjustingTextView)
 
 # SizeAdjustingTextView
 
