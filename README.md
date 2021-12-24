@@ -1,8 +1,6 @@
-[![.github/workflows/main.yml](https://github.com/applibgroup/SizeAdjustingTextView/actions/workflows/main.yml/badge.svg)]
-(https://github.com/applibgroup/SizeAdjustingTextView/actions/workflows/main.yml)
+[![.github/workflows/main.yml](https://github.com/applibgroup/SizeAdjustingTextView/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/SizeAdjustingTextView/actions/workflows/main.yml)
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_SizeAdjustingTextView&metric=alert_status)](https://sonarcloud.io/summary/new_code?
-id=applibgroup_SizeAdjustingTextView)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_SizeAdjustingTextView&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=applibgroup_SizeAdjustingTextView)
 
 # SizeAdjustingTextView
 
@@ -38,7 +36,7 @@ Resizing multiple lines in the text component to keep up the changes.
 3. For using sizeadjustingtextview from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
 ``` groovy
          dependencies {
-             implementation 'dev.applibgroup:SizeAdjustingTextView'
+             implementation 'dev.applibgroup:sizeadjustingtextview:1.0.0'
              testCompile 'junit:junit:4.13'
          }
 ```
